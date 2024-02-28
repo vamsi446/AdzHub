@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all_ads_navigation"
+    app:startDestination="@id/allAdsFragment">
+
+    <fragment
+        android:id="@+id/allAdsFragment"
+        android:name="com.example.adapp.view.all_ads.AllAdsFragment"
+        android:label="fragment_item_all_ads"
+        tools:layout="@layout/fragment_item_all_ads" >
+        <action
+            android:id="@+id/action_allAdsFragment_to_addDetailsFragment"
+            app:destination="@id/addDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDetailsFragment"
+        android:name="com.example.adapp.view.AddDetailsFragment"
+        android:label="fragment_add_details"
+        tools:layout="@layout/fragment_add_details" />
+</navigation>

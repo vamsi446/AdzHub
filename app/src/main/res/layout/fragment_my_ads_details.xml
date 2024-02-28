@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".view.my_ads.MyAdsDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adDetailsTitleTV"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detailsTextView"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/margin4"
+                android:layout_marginEnd="@dimen/margin10"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/title"
+                android:textColor="@color/navy"
+                android:textSize="@dimen/textSize1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/adDetailsPriceTV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/adDetailsIV"
+                android:layout_width="@dimen/adDetailImgW"
+                android:layout_height="@dimen/adDetailImgH"
+                android:layout_marginTop="@dimen/margin5"
+                android:src="@android:drawable/btn_star_big_on"
+                app:layout_constraintEnd_toEndOf="@+id/adDetailsPriceTV"
+                app:layout_constraintStart_toStartOf="@+id/adDetailsTitleTV"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsTitleTV" />
+
+            <TextView
+                android:id="@+id/adDetailsCategoryTV"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detailsTextView"
+                android:layout_marginStart="@dimen/margin6"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_marginEnd="@dimen/margin6"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/Detailscategory"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsIV" />
+
+            <TextView
+                android:id="@+id/adDetailsBrandTV"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detailsTextView"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/Detailsbrand"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/adDetailsCategoryTV"
+                app:layout_constraintStart_toStartOf="@+id/adDetailsCategoryTV"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsCategoryTV" />
+
+            <TextView
+                android:id="@+id/adDetailsPriceTV"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detailsTextView"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin4"
+                android:layout_marginEnd="@dimen/margin6"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/rupee"
+                android:textColor="@color/green"
+                android:textSize="@dimen/textSize1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/adDetailsTitleTV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/adDetailsLocationTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/DetailsLocation"
+                android:textColor="@color/navy"
+                app:layout_constraintEnd_toEndOf="@+id/adDetailsBrandTV"
+                app:layout_constraintStart_toStartOf="@+id/adDetailsBrandTV"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsBrandTV" />
+
+            <TextView
+                android:id="@+id/adDetailsContactTV"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detailsTextView"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/Detailscontact"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/adDetailsLocationTV"
+                app:layout_constraintStart_toStartOf="@+id/adDetailsLocationTV"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsLocationTV" />
+
+            <TextView
+                android:id="@+id/adDetailsDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:padding="@dimen/padding"
+                android:text="@string/Detailsdescription"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/adDetailsContactTV"
+                app:layout_constraintStart_toStartOf="@+id/adDetailsContactTV"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsContactTV" />
+
+            <Button
+                android:id="@+id/adDetailsDeleteB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_marginEnd="@dimen/endMargin1"
+                android:text="@string/DetailsDeleteButton"
+                app:layout_constraintEnd_toStartOf="@+id/adDetailsEditB"
+                app:layout_constraintStart_toStartOf="@+id/adDetailsDescriptionTV"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsDescriptionTV" />
+
+            <Button
+                android:id="@+id/adDetailsEditB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/endMargin1"
+                android:layout_marginTop="@dimen/margin5"
+                android:text="@string/DetailsEditButton"
+                app:layout_constraintEnd_toEndOf="@+id/adDetailsDescriptionTV"
+                app:layout_constraintStart_toEndOf="@+id/adDetailsDeleteB"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailsDescriptionTV" />
+
+            <ProgressBar
+                android:id="@+id/adDetailsProgressB"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/progressBar"
+                android:layout_height="@dimen/progressBar"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

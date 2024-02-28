@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.my_account.MyAccountFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/logoutB"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/ETHeight"
+                android:layout_marginTop="@dimen/margin4"
+                android:text="@string/logoutbutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accountUserPhoneET" />
+
+            <ImageView
+                android:id="@+id/adDetailImg"
+                android:layout_width="@dimen/imagDimen"
+                android:layout_height="@dimen/imagDimen"
+                android:layout_marginTop="@dimen/margin3"
+                android:contentDescription="@string/username"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:src="@drawable/user_icon" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/endMargin"
+                android:layout_marginStart="@dimen/margin1"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginEnd="@dimen/margin1"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:fontFamily="serif"
+                android:text="@string/accountInfo"
+                android:textAlignment="center"
+                android:textColor="@color/navy"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/accountUserNameET"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ETHeight1"
+                android:layout_marginTop="@dimen/margin6"
+                android:layout_marginEnd="@dimen/margin1"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:drawableStart="@drawable/ic_account"
+                android:drawablePadding="@dimen/padding"
+                android:ems="@integer/ems"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editDetailsB"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/accountUserEmailET"
+                app:layout_constraintTop_toBottomOf="@+id/accountUserEmailET" />
+
+            <EditText
+                android:id="@+id/accountUserEmailET"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ETHeight1"
+                android:layout_marginStart="@dimen/margin1"
+                android:layout_marginTop="@dimen/margin7"
+                android:layout_marginEnd="@dimen/margin1"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:drawableStart="@android:drawable/sym_action_email"
+                android:drawablePadding="@dimen/padding"
+                android:ems="@integer/ems"
+                android:inputType="textWebEmailAddress|textPersonName"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adDetailImg" />
+
+            <EditText
+                android:id="@+id/accountUserPhoneET"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ETHeight1"
+                android:layout_marginTop="@dimen/margin6"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:drawableStart="@android:drawable/stat_sys_phone_call"
+                android:drawablePadding="@dimen/padding"
+                android:ems="@integer/ems"
+                android:inputType="number|textPhonetic"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editDetailsB"
+                app:layout_constraintStart_toStartOf="@+id/accountUserNameET"
+                app:layout_constraintTop_toBottomOf="@+id/accountUserNameET" />
+
+            <Button
+                android:id="@+id/submitB"
+                android:layout_width="115dp"
+                android:layout_height="41dp"
+                android:text="@string/savechangesbutton"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/cancelB"
+                app:layout_constraintTop_toBottomOf="@+id/accountUserPhoneET" />
+
+            <Button
+                android:id="@+id/cancelB"
+                android:layout_width="122dp"
+                android:layout_height="44dp"
+                android:text="@string/cancelbutton"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/submitB"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/submitB" />
+
+            <ProgressBar
+                android:id="@+id/accountPB"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/progressBar"
+                android:layout_height="@dimen/progressBar"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/Blue300"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.641" />
+
+            <ImageButton
+                android:id="@+id/editDetailsB"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/curve_reactangle_night"
+                android:backgroundTint="@color/navy"
+                android:src="@android:drawable/ic_menu_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/accountUserNameET" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

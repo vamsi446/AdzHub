@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardHeight1"
+    android:layout_margin="4dp"
+    android:backgroundTint="@color/Blue900"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/margin1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layoutHeight1"
+        android:background="@drawable/gradient_background">
+
+        <TextView
+            android:id="@+id/notifyCategoryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_marginTop="@dimen/margin6"
+            android:layout_weight="1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="@fraction/bias2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue200"
+            android:padding="@dimen/padding"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/Blue900"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/content"
+            app:layout_constraintHorizontal_bias="@fraction/bias2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/content" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue200"
+            android:padding="@dimen/padding"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notifyCategoryTV"
+            tools:text="@string/notification" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_brand">
+        <item>Bajaj</item>
+        <item>TVS</item>
+        <item>Maruthi Suzuki</item>
+        <item>Hundai</item>
+        <item>Tata</item>
+        <item>Mahindra</item>
+    </string-array>
+    <string-array name="mobile_brand">
+        <item>Apple</item>
+        <item>Samsung</item>
+        <item>Nokia</item>
+        <item>OnePlus</item>
+        <item>Xiaomi</item>
+        <item>Vivo</item>
+        <item>Oppo</item>
+    </string-array>
+
+    <string-array name="electronics_brand">
+        <item>Sony</item>
+        <item>Samsung</item>
+        <item>LG</item>
+        <item>Haier</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="furniture_brand">
+        <item>Royal Oak</item>
+        <item>Urban Ladder</item>
+        <item>Nilkamal</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="property_brand">
+        <item>Prestige group</item>
+        <item>Confident group</item>
+        <item>DLF</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="other_brand">
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>mobile</item>
+        <item>vehicle</item>
+        <item>furniture</item>
+        <item>properties</item>
+        <item>electronics</item>
+        <item>all</item>
+    </string-array>
+</resources>

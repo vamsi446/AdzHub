@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:layout_margin="@dimen/padding"
+    android:layout_marginTop="6dp"
+    app:cardBackgroundColor="@color/navy"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:id="@+id/adImageTV"
+            android:layout_width="0dp"
+            android:layout_height="161dp"
+            android:layout_marginStart="@dimen/margin4"
+            android:layout_marginEnd="@dimen/margin4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/adTitleTV"
+            app:layout_constraintTop_toTopOf="@+id/adTitleTV"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/adPriceTV"
+            android:layout_width="88dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/margin6"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:fontFamily="@font/comfortaa_semi_bold"
+            android:padding="@dimen/padding"
+            android:textColor="@color/teal_700"
+            app:layout_constraintStart_toStartOf="@+id/adTitleTV"
+            app:layout_constraintTop_toBottomOf="@+id/adTitleTV" />
+
+        <TextView
+            android:id="@+id/adContactTV"
+            android:layout_width="128dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/margin6"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:drawableStart="@android:drawable/stat_sys_phone_call"
+            android:drawablePadding="@dimen/padding"
+            android:fontFamily="@font/comfortaa_semi_bold"
+            android:padding="@dimen/padding"
+            android:textColor="@color/dark_grey"
+            app:drawableTint="@color/navy"
+            app:layout_constraintStart_toStartOf="@+id/adPriceTV"
+            app:layout_constraintTop_toBottomOf="@+id/adPriceTV" />
+
+        <TextView
+            android:id="@+id/adTitleTV"
+            android:layout_width="159dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/margin6"
+            android:layout_marginTop="@dimen/margin6"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:fontFamily="@font/comfortaa_semi_bold"
+            android:padding="@dimen/padding"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adDescriptionTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue200"
+            android:fontFamily="@font/comfortaa"
+            android:padding="@dimen/padding"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="@+id/adImageTV"
+            app:layout_constraintStart_toStartOf="@+id/adContactTV"
+            app:layout_constraintTop_toBottomOf="@+id/adImageTV" />
+
+        <TextView
+            android:id="@+id/adLocationTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue200"
+            android:drawableStart="@android:drawable/ic_dialog_map"
+            android:drawablePadding="@dimen/padding"
+            android:fontFamily="@font/comfortaa"
+            android:padding="@dimen/padding"
+            android:textColor="@color/dark_grey"
+            app:drawableTint="@color/navy"
+            app:layout_constraintEnd_toEndOf="@+id/adDescriptionTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/adDescriptionTV"
+            app:layout_constraintTop_toBottomOf="@+id/adDescriptionTV" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

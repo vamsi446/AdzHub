@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/addverDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        tools:context=".view.AddDetailsFragment">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin2"
+            android:layout_marginStart="@dimen/margin1"
+            android:layout_marginTop="@dimen/margin2"
+            android:layout_marginEnd="@dimen/margin1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:text="@string/add_details"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/adDetailImg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/imgHeight"
+            android:layout_marginTop="@dimen/margin1"
+            app:layout_constraintEnd_toEndOf="@+id/adDetailPriceT"
+            app:layout_constraintStart_toStartOf="@+id/adDetailsTitleT"
+            app:layout_constraintTop_toBottomOf="@+id/adDetailsTitleT"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/adDetailsTitleT"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ETHeight"
+            android:layout_marginTop="@dimen/margin1"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:padding="@dimen/padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/adDetailPriceT"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/adDetailPriceT"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ETHeight"
+            android:layout_marginStart="@dimen/endMargin"
+            android:layout_marginTop="@dimen/margin1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:text="@string/rupee"
+            android:textColor="@color/pinkRed"
+            android:textSize="@dimen/textSize3"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toEndOf="@+id/adDetailsTitleT"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/adDetailDescT"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/descHeight"
+            android:layout_marginStart="@dimen/margin1"
+            android:layout_marginTop="@dimen/margin1"
+            android:layout_marginEnd="@dimen/margin1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:padding="@dimen/padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/adDetailImg"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/adDetailImg"
+            app:layout_constraintTop_toBottomOf="@+id/adDetailContactT" />
+
+        <TextView
+            android:id="@+id/adDetailLocT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@android:drawable/ic_dialog_map"
+            app:drawableTint="@color/navy"
+            app:layout_constraintEnd_toEndOf="@+id/adDetailDescT"
+            app:layout_constraintHorizontal_bias="@fraction/bias1"
+            app:layout_constraintStart_toStartOf="@+id/adDetailDescT"
+            app:layout_constraintTop_toBottomOf="@+id/adDetailDescT" />
+
+        <TextView
+            android:id="@+id/adDetailContactT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin1"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginEnd="@dimen/margin4"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue300"
+            android:drawableStart="@android:drawable/stat_sys_phone_call"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:textColor="@color/black"
+            app:drawableTint="@color/navy"
+            app:layout_constraintEnd_toStartOf="@+id/adMessageContact"
+            app:layout_constraintStart_toStartOf="@+id/adDetailImg"
+            app:layout_constraintTop_toBottomOf="@+id/adDetailImg" />
+
+        <ImageButton
+            android:id="@+id/adCallContact"
+            android:layout_width="@dimen/imageB"
+            android:layout_height="@dimen/imageB"
+            android:layout_marginEnd="@dimen/margin1"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/navy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adMessageContact"
+            app:srcCompat="@android:drawable/stat_sys_phone_call_forward" />
+
+        <ImageButton
+            android:id="@+id/adMessageContact"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/curve_reactangle_night"
+            android:backgroundTint="@color/Blue900"
+            app:layout_constraintEnd_toStartOf="@+id/adCallContact"
+            app:layout_constraintTop_toTopOf="@+id/adDetailContactT"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

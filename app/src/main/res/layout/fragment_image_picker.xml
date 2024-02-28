@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".view.ImagePickerFragment">
+
+
+    <TextView
+        android:id="@+id/uploadPicture"
+        android:layout_width="406dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:fontFamily="@font/podkova_bold"
+        android:text="@string/upload"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/selectedUploadImage"
+        android:layout_width="387dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="@dimen/margin4"
+        android:layout_marginTop="@dimen/margin3"
+        android:layout_marginEnd="@dimen/margin4"
+        android:contentDescription="@string/uploadImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@fraction/bias1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadPicture"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/changeUploadButton"
+        android:layout_width="@dimen/reselectW"
+        android:layout_height="@dimen/reselectH"
+        android:layout_marginTop="30dp"
+        android:drawableEnd="@android:drawable/ic_menu_revert"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/changeupload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedUploadImage" />
+
+    <Button
+        android:id="@+id/uploadImgB"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/reselectH"
+        android:layout_marginTop="12dp"
+        android:drawableEnd="@drawable/upload_arrow"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/uploadImg"
+        app:iconTint="#E3D3D3"
+        app:layout_constraintEnd_toEndOf="@+id/changeUploadButton"
+        app:layout_constraintStart_toStartOf="@+id/changeUploadButton"
+        app:layout_constraintTop_toBottomOf="@+id/changeUploadButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

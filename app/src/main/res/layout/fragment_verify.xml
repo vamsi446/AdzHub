@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verifyDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".view.auth.VerifyFragment">
+
+    <TextView
+        android:id="@+id/verifyDetailsTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin3"
+        android:layout_marginEnd="@dimen/margin1"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:fontFamily="@font/podvoka_extra_bold"
+        android:text="@string/verify"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameVerifyET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight2"
+        android:layout_marginStart="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin3"
+        android:layout_marginEnd="@dimen/margin1"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/comfortaa_semi_bold"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/verifyDetailsTV"
+        app:layout_constraintStart_toStartOf="@+id/verifyDetailsTV"
+        app:layout_constraintTop_toBottomOf="@+id/userprofileVerifyIV" />
+
+    <EditText
+        android:id="@+id/contactVerifyET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight2"
+        android:layout_marginTop="@dimen/margin3"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/comfortaa_semi_bold"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/usernameVerifyET"
+        app:layout_constraintStart_toStartOf="@+id/usernameVerifyET"
+        app:layout_constraintTop_toBottomOf="@+id/usernameVerifyET" />
+
+    <EditText
+        android:id="@+id/locationVerifyET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight2"
+        android:layout_marginTop="@dimen/margin3"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/comfortaa_semi_bold"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/contactVerifyET"
+        app:layout_constraintStart_toStartOf="@+id/contactVerifyET"
+        app:layout_constraintTop_toBottomOf="@+id/contactVerifyET" />
+
+    <ImageView
+        android:id="@+id/userprofileVerifyIV"
+        android:layout_width="@dimen/imagDimen"
+        android:layout_height="@dimen/imagDimen"
+        android:layout_marginTop="@dimen/margin8"
+        app:layout_constraintEnd_toEndOf="@+id/verifyDetailsTV"
+        app:layout_constraintStart_toStartOf="@+id/verifyDetailsTV"
+        app:layout_constraintTop_toBottomOf="@+id/verifyDetailsTV"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/postB"
+        android:layout_width="@dimen/btnHeight"
+        android:layout_height="@dimen/detailsTextView"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/postadd"
+        app:layout_constraintEnd_toEndOf="@+id/locationVerifyET"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/locationVerifyET"
+        app:layout_constraintTop_toBottomOf="@+id/locationVerifyET" />
+
+    <ProgressBar
+        android:id="@+id/pBarVerify"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:indeterminate="true"
+        app:layout_constraintEnd_toEndOf="@+id/contactVerifyET"
+        app:layout_constraintStart_toStartOf="@+id/contactVerifyET"
+        app:layout_constraintTop_toBottomOf="@+id/userprofileVerifyIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF53DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="fab_white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="half_black">#808080</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="textColor">@color/black</color>
+    <color name="drawerMenuTextColor">#000000</color>
+    <color name="list_divider_background">#eee</color>
+    <color name="dark_background_text_color">#EEEEEE</color>
+    <color name="secondary_button_color">#D6D7D7</color>
+    <color name="transparent">#00000000</color>
+    <color name="secondaryTextColor">#a0a0a0</color>
+    <color name="listItemHighlighted">#f8f8f8</color>
+    <color name="highlightTextColor">#55739a</color>
+    <color name="grey">#A5ABAF</color>
+
+    //normal colors
+
+
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="green">#008000</color>
+    <color name="navy">#000080</color>
+    <color name="blue800">#FF1683DA</color>
+    <color name="dark_grey">#FF434141</color>
+    <color name="dark_blue">#FF2B3987</color>
+
+
+    //new colours from pallete
+    <color name="skyBlue">#D2F0F3</color>
+    <color name="greenBlue">#55efc4</color>
+    <color name="mintGreen">#00b894</color>
+    <color name="pinkRed">#ff7675</color>
+    <color name="blurBlue">#3B3B98</color>
+    <color name="goldHoney">#EAB543</color>
+    <color name="backgroundTint">#95D8D0</color>
+
+    <color name="Blue900">#000080</color>
+    <color name="Blue700">#50b8e7</color>
+    <color name="Blue500">#84cdee</color>
+    <color name="Blue300">#b9e2f5</color>
+    <color name="Blue200">#dcf0fa</color>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,90 @@
+<resources>
+    //sample text for fragments
+    <string name="app_name">AdzHub</string>
+    <string name="allAds">ALL ADS FRAGMENT</string>
+    <string name="myAccount">MY   ACCOUNT</string>
+    <string name="myAd">My Ad</string>
+    <string name="notification">Notification</string>
+    <string name="newAd">Add a new advertisement</string>
+    <string name="uploadImg">Upload</string>
+    <string name="noInternet">Please check your Connection</string>
+    <string name="noAds">No Ads Found</string>
+
+    //choose category
+    //content description for image buttons
+    <string name="vehicle">vehicle</string>
+    <string name="mobile">mobile</string>
+    <string name="furniture">furniture</string>
+    <string name="property">property</string>
+    <string name="electronics">electronics</string>
+    <string name="other">other</string>
+    //button string
+    <string name="next">N E X T</string>
+    //text view
+    <string name="chooseCategory">CHOOSE CATEGORY</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //add new ad -> adding details
+    <string name="title">Enter title : </string>
+    <string name="description">Enter description :</string>
+    <string name="price">Enter Price :</string>
+    <string name="title_activity_bottom__navigation_">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="brand">Brand:</string>
+    <string name="emailForgot">Enter your email</string>
+
+    <string name="username">Enter Username</string>
+    <string name="email"> Email</string>
+    <string name="resetButton">Reset</string>
+    <string name="password">  Enter Password</string>
+    <string name="cpassword">  Confirm Password</string>
+    <string name="phonenumber">  Enter Phone Number</string>
+    <string name="register">  Register</string>
+    <string name="signin">  SIGN IN</string>
+    <string name="newuser">  New User? Create Account</string>
+    <string name="Registration"> User Registration</string>
+    <string name="userLogin"> L O G I N</string>
+    <string name="accountInfo">ACCOUNT  INFO</string>
+    <string name="upload">UPLOAD  IMAGE</string>
+    <string name="changeupload">Reselect</string>
+    <string name="verify">VERIFY DETAILS</string>
+    <string name="postadd">Post Add</string>
+    <string name="location">Location:</string>
+    <string name="ad_details">Ad Details</string>
+    <string name="logoutbutton">Logout</string>
+    <string name="cancelbutton">Cancel</string>
+    <string name="savechangesbutton">Save Changes</string>
+    <string name="editdetails">Edit Details</string>
+    <string name="DetailsEditButton">Edit</string>
+    <string name="DetailsDeleteButton">Delete</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="resetbutton">Reset Password</string>
+    <string name="Detailscategory">Category :</string>
+    <string name="Detailsbrand">Brand :</string>
+    <string name="Detailsprice">Price :</string>
+    <string name="DetailsLocation">Location :</string>
+    <string name="Detailsusername">Username :</string>
+    <string name="Detailscontact">Contact :</string>
+    <string name="Detailsdescription">Description :</string>
+    <string name="add_details">ADVERTISEMENT DETAILS</string>
+    <string name="heart_vectorpath">M295.706,35.522C295.706,35.522 295.706, 35.522 295.706,35.522c-34.43,-0.184 -67.161,14.937 -89.339,41.273c-22.039,-26.516 -54.861,-41.68 -89.339, -41.273C52.395,35.522 0,87.917 0,152.55C0,263.31 193.306, 371.456 201.143,375.636c3.162,2.113 7.286,2.113 10.449, 0c7.837,-4.18 201.143,-110.759 201.143,-223.086C412.735, 87.917 360.339,35.522 295.706,35.522zM206.367, 354.738C176.065,336.975 20.898,242.412 20.898,152.55c0, -53.091 43.039,-96.131 96.131,-96.131c32.512,-0.427 62.938,15.972 80.457,43.363c3.557, 4.905 10.418,5.998 15.323,2.44c0.937,-0.68 1.761,-1.503 2.44, -2.44c29.055,-44.435 88.631,-56.903 133.066,-27.848c27.202, 17.787 43.575,48.114 43.521,80.615C391.837,243.456 236.669, 337.497 206.367,354.738z</string>
+
+    <!--    all ads strings-->
+    <string name="rupee">₹</string>
+    <string name="contact">Phone:</string>
+    <string name="searchLocation">Search for Ads at any location</string>
+
+    <!--    strings for categories-->
+    <string name="vehicles">VEHICLES</string>
+    <string name="phones">GADGETS</string>
+    <string name="furnitures">FURNITURE</string>
+    <string name="electronic">HOME APPLIANCES</string>
+    <string name="properties">PROPERTY</string>
+    <string name="others">OTHER</string>
+    <string name="all">ALL</string>
+
+    <string name="tagline">Trade Everything……Everywhere</string>
+
+</resources>

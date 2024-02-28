@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".view.auth.RegisterFragment">
+
+    <EditText
+        android:id="@+id/usernameRegisterET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight3"
+        android:layout_marginStart="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin6"
+        android:layout_marginEnd="@dimen/margin1"
+        android:autofillHints=""
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/fira_light"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@fraction/bias2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadProfilePicture" />
+
+    <EditText
+        android:id="@+id/passwordRegisterET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight3"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/fira_light"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/emailRegisterET"
+        app:layout_constraintHorizontal_bias="@fraction/bias1"
+        app:layout_constraintStart_toStartOf="@+id/emailRegisterET"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegisterET" />
+
+    <Button
+        android:id="@+id/registerB"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/phoneRegisterET"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/phoneRegisterET"
+        app:layout_constraintTop_toBottomOf="@+id/phoneRegisterET" />
+
+    <EditText
+        android:id="@+id/rePasswordRegisterET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight3"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/fira_light"
+        android:hint="@string/cpassword"
+        android:inputType="textPassword"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/passwordRegisterET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordRegisterET"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterET" />
+
+    <EditText
+        android:id="@+id/phoneRegisterET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight3"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/fira_light"
+        android:hint="@string/phonenumber"
+        android:inputType="numberSigned|textPersonName"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/rePasswordRegisterET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rePasswordRegisterET"
+        app:layout_constraintTop_toBottomOf="@+id/rePasswordRegisterET" />
+
+    <EditText
+        android:id="@+id/emailRegisterET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight3"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/fira_light"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="6dp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/usernameRegisterET"
+        app:layout_constraintHorizontal_bias="@fraction/bias1"
+        app:layout_constraintStart_toStartOf="@+id/usernameRegisterET"
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegisterET" />
+
+    <ImageView
+        android:id="@+id/uploadProfilePicture"
+        android:layout_width="@dimen/uploadW"
+        android:layout_height="@dimen/uploadH"
+        android:layout_marginTop="@dimen/margin3"
+        android:src="@drawable/upload_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@fraction/bias2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

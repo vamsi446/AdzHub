@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="@dimen/padding"
+    tools:context=".view.new_ad_details">
+
+    <Spinner
+        android:id="@+id/brand_spinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight4"
+        android:layout_marginStart="@dimen/margin9"
+        android:layout_marginTop="@dimen/margin2"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:popupBackground="@drawable/gradient_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight"
+        android:layout_marginTop="@dimen/margin3"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/comfortaa"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/brand_spinner"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/brand_spinner" />
+
+    <EditText
+        android:id="@+id/descET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layoutHeight1"
+        android:layout_marginTop="@dimen/margin3"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/comfortaa"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/titleET"
+        app:layout_constraintStart_toStartOf="@+id/titleET"
+        app:layout_constraintTop_toBottomOf="@+id/titleET" />
+
+    <EditText
+        android:id="@+id/priceET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ETHeight2"
+        android:layout_marginTop="@dimen/margin7"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="@integer/ems"
+        android:fontFamily="@font/comfortaa"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:padding="@dimen/padding"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/descET"
+        app:layout_constraintStart_toStartOf="@+id/descET"
+        app:layout_constraintTop_toBottomOf="@+id/descET" />
+
+    <Button
+        android:id="@+id/adNextB"
+        android:layout_width="@dimen/logoW"
+        android:layout_height="@dimen/endMargin1"
+        android:layout_marginTop="@dimen/endMargin"
+        android:drawableEnd="@android:drawable/ic_media_next"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="@+id/priceET"
+        app:layout_constraintStart_toStartOf="@+id/priceET"
+        app:layout_constraintTop_toBottomOf="@+id/priceET" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin11"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/margin2"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:fontFamily="@font/comfortaa_semi_bold"
+        android:padding="@dimen/padding"
+        android:text="@string/brand"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/textSize5"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
